@@ -12,19 +12,19 @@
 
 /* -------------------------------------------------- */
 /* main-header */
-@import '_main-header.css';
+@import 'main-header.css';
 /* banner */
-@import '_banner.css';
+@import 'banner.css';
 /* what */
-@import '_feature.css';
+@import 'feature.css';
 /* tools */
-@import '_testemonial.css';
+@import 'testemonial.css';
 /* clients */
-@import '_clients.css';
+@import 'clients.css';
 /* help */
-@import '_contacts.css';
+@import 'contacts.css';
 /* footer */
-@import '_footer.css';
+@import 'footer.css';
 /* -------------------------------------------------- */
 
 
