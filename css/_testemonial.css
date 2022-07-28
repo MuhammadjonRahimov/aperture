@@ -1,0 +1,55 @@
+.testemonial {
+}
+.testemonial__tabs {
+	border: 1px solid var(--gray);
+	display: grid;
+	padding:0 1rem;
+	gap:2rem;
+	grid-template: 1fr / repeat(4, 1fr);
+	margin-bottom: 3rem;
+}
+.testemonial__tab {
+	transform:translateY(-50%);
+	transition:0.3s;
+}
+.testemonial__tab:first-child{
+	background-color:var(--color-primary);
+	color:var(--white);
+}
+.testemonial__tab:nth-child(2){
+	background-color:var(--color-secondary);
+	color:var(--white);
+}
+.testemonial__tab:nth-child(4){
+	background-color:var(--color-tertiary);
+	color:var(--white);
+}
+.tab-active{
+	transform:translateY(-66%);
+	transition:0.3s;
+}
+
+.testemonial__row {
+}
+.testemonial__item {
+	padding-bottom: 32%;
+	position: relative;
+	min-height: 35rem;
+	display: none;
+}
+.testemonial__item .block-text{
+	right: 7.1rem;
+	bottom:16rem;
+	padding:0 1rem;
+}
+.testemonial__item:nth-child(2) {
+	min-height: none;
+	padding:11.3rem 6rem;
+}
+.testemonial__item:nth-child(2) .block-text{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.testemonial__btn{
+}

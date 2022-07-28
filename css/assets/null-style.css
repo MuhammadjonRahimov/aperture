@@ -1,0 +1,178 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* :focus,
+:active {
+	outline: none;
+}
+ */
+a,
+a:visited {
+	text-decoration: none;
+	font-family: inherit;
+	/* color: inherit; */
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html {
+	font-size: 35%;
+	box-sizing:border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 10px;
+	line-height: 20px;
+	color: var(--gray);
+	background:var(--black);
+}
+
+a{
+	scroll-behavior: smooth;
+}
+.hidden{
+	overflow: hidden;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+	color: inherit;
+	font-size: inherit;
+	letter-spacing: inherit;
+	outline: none;
+}
+input,
+textarea::placeholder {
+	font-family: inherit;
+	color: inherit;
+	/* text-transform: capitalize; */
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+	background-color: transparent;
+	color: inherit;
+	display: inline-block;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+/*--------------------*/
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+}
+
+.main{
+	flex:1 1 auto;
+}
+.container {
+	box-sizing: content-box;
+	max-width:113rem;
+	padding:0 1.5rem;
+	margin:0 auto;
+}
+.overlay{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0.9);
+	z-index: 99;
+	transition:all 0.5s ease 0s;
+}
+.modal{
+	position:fixed;
+	left: 50%;
+	top: 50%;
+	transform:translate(-50%, -50%);
+	background-color: var(--gray);
+	color:var(--black);
+	font-size: 4rem;
+	padding:7rem 5rem;
+	width: 80%;
+	border-radius:10px;
+	line-height: 2;
+	text-align: center;
+	z-index: 115;
+}
+.close-modal{
+	position:absolute;
+	top: 1rem;
+	right: 1.5rem;
+	font-size: 5rem;
+}
+.none{
+	display: none;
+}
+.testemonial__item.active-tab-content{
+	display: block;
+}
+.main-header.sticky{
+	position: fixed;
+	z-index: 200;
+	transition:all 0.5s linear 0s;
+}
+.filtered{
+	filter:blur(10px);
+	transition:all 0.4s linear 0s;
+}

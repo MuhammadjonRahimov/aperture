@@ -1,0 +1,18 @@
+.banner {
+	position: relative;
+	height: 100vh;
+}
+.banner__img {
+}
+.banner__body {
+	width: 90%;
+	max-width:60rem;
+}
+.banner__body {
+	left: 50%;
+	transform:translateX(-50%);
+	bottom:20%;
+	text-align: center;
+	padding: 0 1rem;
+}
+

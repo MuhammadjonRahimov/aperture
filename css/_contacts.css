@@ -1,0 +1,79 @@
+.contacts {
+}
+.contacts__body {
+	width: 90%;
+	margin:0 auto;
+}
+.contacts__body > *:not(:last-child) {
+	margin-bottom: 4rem;
+}
+.contacts__body-img {
+	width: 15rem;
+	/* height: 8rem; */
+}
+.contacts__body-img img{
+	width: 100%;
+	height: 100%;
+}
+.contacts__desc {
+	font-size: 2.5rem;
+}
+.contacts__label {
+	padding:1rem 0;
+}
+.contacts__label > *:not(:last-child){
+	margin-bottom:4rem;
+}
+.contacts__label-title {
+	cursor:pointer;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	letter-spacing: 1px;
+	padding-left: 3rem;
+	display: inline-block;
+	position: relative;
+}
+.contacts__label-title::before,
+.contacts__label-title::after{
+	content:'';
+	width: 1.5rem;
+	height: 2px;
+	background-color: var(--white);
+	display: inline-block;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	left: 0;
+	transition:all 0.3s linear 0s;
+}
+.contacts__label-title::before{
+	transform:rotate(45deg);
+}
+.contacts__label-title::after{
+	transform:rotate(-45deg);
+	left:.9rem;
+}
+.contacts__list {
+	color:var(--white);
+	position:absolute;
+	transform: scaleY(0);
+	transition:all 0.3s linear 0s;
+}
+.contacts__item {
+	font-size: 2rem;
+}
+.contacts__item:not(:last-child) {
+	margin-bottom: 3rem;
+}
+
+.active-label-title::before{
+	transform:rotate(-45deg);
+}
+.active-label-title::after{
+	transform:rotate(45deg);
+}
+.active-list{
+	position: relative;
+	transform: scaleY(1);
+	transition:all 0.3s linear 0s;
+}

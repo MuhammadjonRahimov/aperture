@@ -1,0 +1,29 @@
+.feature {
+}
+.feature > *:not(:last-child) {
+	margin-bottom: 5rem;
+}
+
+.feature__row {
+}
+.feature__column {
+	padding:0 2rem;
+}
+.feature__column:not(:last-child) {
+	margin-bottom: 2rem;
+}
+.feature__item {
+	/* min-height: 45rem; */
+	padding:2rem 0;
+	position: relative;
+	padding-bottom: 104%;
+}
+.feature__item img{
+}
+.feature__item .block-text {
+	left: 3rem;
+	right: 4.5rem;
+	bottom:3rem;
+}
+.feature__btn {
+}
