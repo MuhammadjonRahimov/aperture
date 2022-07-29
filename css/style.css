@@ -1,3 +1,8 @@
+
+
+/* media */
+
+
 /* -------------------------------------------------- */
 /* fonts */
 @import '../fonts/poppins/fonts.css';
@@ -12,25 +17,20 @@
 
 /* -------------------------------------------------- */
 /* main-header */
-@import 'main-header.css';
+@import './main-header.css';
 /* banner */
-@import 'banner.css';
+@import './banner.css';
 /* what */
-@import 'feature.css';
+@import './feature.css';
 /* tools */
-@import 'testemonial.css';
+@import './testemonial.css';
 /* clients */
-@import 'clients.css';
+@import './clients.css';
 /* help */
-@import 'contacts.css';
+@import './contacts.css';
 /* footer */
-@import 'footer.css';
+@import './footer.css';
 /* -------------------------------------------------- */
 
 
-
-
-/* media */
-@import '_media.css';
-
-
+@import './media.css'

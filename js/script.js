@@ -50,23 +50,30 @@ allSections.forEach(section => {
 });
 
 
-// filter
-// const imgReveal = function (entries, observer) {
-// 	const [entry] = entries;
-// 	console.log(entry);
-// 	// if (entry.isIntersecting) {
-// 	// 	entry.target.classList.remove('filtered');
-// 	// 	observer.unobserve(entry.target);
-// 	// }
-// }
-// const imgObserver = new IntersectionObserver(imgReveal, { root: null, threshold: 0.5, });
 
-// const allIbg = document.querySelectorAll('.ibg');
-// console.log(allIbg);
-// allIbg.forEach(img => {
-// 	img.classList.add('filtered');
-// 	imgObserver.observe(img);
-// })
+const revealBlock = function (entries, observer) {
+	const [entry] = entries;
+	if (entry.isIntersecting) {
+		entry.target.classList.remove('hidden-block');
+		observer.unobserve(entry.target);
+	}
+}
+
+const blockTextObserver = new IntersectionObserver(revealBlock, {
+	root: null,
+	threshold: [0.5],
+	rootMargin: '0px'
+});
+
+const allBlockText = document.querySelectorAll('.block-text');
+
+allBlockText.forEach(block => {
+	block.classList.add('hidden-block');
+	blockTextObserver.observe(block);
+})
+
+
+
 
 
 // menu burger
@@ -145,7 +152,6 @@ nav.addEventListener('mouseout', handleHeader.bind(0));
 // Tabbed components
 allTabs.forEach((tab, index) => {
 	tab.setAttribute('data-set', index + 1);
-	// allTabContent[index].classList.add(`tab-content-${index + 1}`, 'none');
 });
 
 tabContainer.addEventListener('click', function (e) {
@@ -229,7 +235,6 @@ contactsBody.addEventListener('click', function (e) {
 
 
 // scroll
-
 menuList.addEventListener('click', function (e) {
 	e.preventDefault();
 	if (e.target.closest('.main-header__link')) {
@@ -239,7 +244,6 @@ menuList.addEventListener('click', function (e) {
 			function setScrollIntoView(top) {
 				const selected = document.querySelector(id);
 				console.log(selected);
-				alert('hacked');
 				selected.scrollIntoView({ behavior: 'smooth', block: 'start' });
 			}
 			setScrollIntoView(true);
