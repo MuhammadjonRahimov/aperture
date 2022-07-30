@@ -13,11 +13,19 @@
 	box-sizing: border-box;
 }
 
-/* :focus,
-:active {
-	outline: none;
+::-webkit-scrollbar {
+	width: 5px;
 }
- */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px #ccc;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background: var(--gray);
+}
+::-webkit-scrollbar-button {
+	background-color: #fff;
+}
 a,
 a:visited {
 	text-decoration: none;

@@ -243,11 +243,9 @@ menuList.addEventListener('click', function (e) {
 		if (id !== '#') {
 			function setScrollIntoView(top) {
 				const selected = document.querySelector(id);
-				console.log(selected);
 				selected.scrollIntoView({ behavior: 'smooth', block: 'start' });
 			}
 			setScrollIntoView(true);
 		}
 	}
 })
-

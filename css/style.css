@@ -1,36 +1,30 @@
-
-
-/* media */
-
-
 /* -------------------------------------------------- */
 /* fonts */
-@import '../fonts/poppins/fonts.css';
+@import "../fonts/poppins/fonts.css";
 
 /* shared*/
-@import '../css/assets/shared.css';
+@import "../css/assets/shared.css";
 
 /* null-style */
-@import 'assets/null-style.css';
+@import "assets/null-style.css";
 /* -------------------------------------------------- */
-
 
 /* -------------------------------------------------- */
 /* main-header */
-@import './main-header.css';
+@import "./main-header.css";
 /* banner */
-@import './banner.css';
+@import "./banner.css";
 /* what */
-@import './feature.css';
+@import "./feature.css";
 /* tools */
-@import './testemonial.css';
+@import "./testemonial.css";
 /* clients */
-@import './clients.css';
+@import "./clients.css";
 /* help */
-@import './contacts.css';
+@import "./contacts.css";
 /* footer */
-@import './footer.css';
+@import "./footer.css";
 /* -------------------------------------------------- */
 
-
-@import './media.css'
+/* media */
+@import "./media.css";
